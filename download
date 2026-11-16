@@ -1,0 +1,30 @@
+# Python / PyInstaller / local builds
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+output/
+*.spec
+*.log
+# Windows user preferences and local secrets
+config.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Downloaded third-party Windows runtime files; fetch them from upstream
+vendor/windows/*
+!vendor/windows/README.md
+# Compiled artifacts should go to GitHub Releases, not Git history
+*.exe
+*.dll
+*.bin
+*.msi
+*.zip
+*.7z
+.DS_Store
+Thumbs.db

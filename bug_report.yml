@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible Flipmelon issue
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Never include ADB keys, passwords, private device identifiers or personal data."
+  - type: input
+    id: version
+    attributes:
+      label: Flipmelon version
+      placeholder: "1.0.8.9-beta"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Area
+      options: ["Setup / language", "Splash animation", "Mirror", "Virtual display", "Build / installer", "Other"]
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ... 2. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual result
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and hardware (no personal identifiers)

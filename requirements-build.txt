@@ -1,0 +1,5 @@
+# Build tools. These are intentionally unpinned in the current beta pipeline.
+# Lock tested versions before creating automated public release builds.
+PySide6
+pyinstaller
+rlottie-python
